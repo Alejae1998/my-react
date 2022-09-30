@@ -1,0 +1,13 @@
+.About {
+  padding: var(--padding);
+
+  form {
+    background: var(--header-color);
+    color: var(--background-color);
+    padding: 30px 40px;
+    width: 500px;
+
+    display: grid;
+    row-gap: 25px;
+  }
+}
