@@ -1,0 +1,19 @@
+:root {
+  --primary-font: 'Noto Sans', sans-serif;
+  --header-color: #65743a;
+  --background-color: #f8fff4;
+
+  --padding: 20px;
+    height: 100vh;
+  background: var(--background-color);
+  font-family: var(--primary-font); 
+}
+
+body {
+  height: 100vh;
+  background: var(--background-color);
+  font-family: var(--primary-font); 
+}
+{
+  box-sizing: border-box;
+}
