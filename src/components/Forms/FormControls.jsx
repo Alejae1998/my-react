@@ -1,4 +1,3 @@
-/* eslint-disable no-prototype-builtins */
 import { Children, cloneElement, forwardRef } from 'react';
 import classNames from 'classnames';
 import styles from './FormControls.css';
@@ -21,7 +20,7 @@ function FormControl({
 function LabelText({ text, as: Tag = 'span' }) {
   if (!text) return null;
 
-  const className = classNames(style.Label, 'label-text');
+  const className = classNames(styles.Label, 'label-text');
   return <Tag className={className}>{text}</Tag>;
 }
 
