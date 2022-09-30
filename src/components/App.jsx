@@ -6,13 +6,15 @@ import FuzzyBunnyProvider from '../state/context/FuzzyBunnyContext.jsx';
 
 export default function App() {
   return (
-    <Router>
+    <>
       <Toaster />
       <UserProvider>
         <FuzzyBunnyProvider>
-          <Routes />
+          <Router>
+            <Routes />
+          </Router>
         </FuzzyBunnyProvider>
       </UserProvider>
-    </Router>
+    </>
   );
 }
