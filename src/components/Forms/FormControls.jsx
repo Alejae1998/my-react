@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 import { Children, cloneElement, forwardRef } from 'react';
 import classNames from 'classnames';
 import styles from './FormControls.css';
