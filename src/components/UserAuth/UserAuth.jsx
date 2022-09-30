@@ -1,7 +1,7 @@
 import Auth from './Auth.jsx';
 import styles from './UserAuth.css';
 import { useStatus } from '../../state/hooks/userAuth.js';
-import Profile from './Profile.jsx';
+import Profile from './profile.jsx';
 import { Navigate } from 'react-router-dom';
 
 export default function UserAuth() {
