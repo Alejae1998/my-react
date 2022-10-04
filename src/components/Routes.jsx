@@ -8,7 +8,7 @@ import About from './About/About.jsx';
 import FuzzyBunny from './FuzzyBunny/FuzzyBunny.jsx';
 import Families from './FuzzyBunny/Families.jsx';
 import Bunnies from './FuzzyBunny/Bunnies.jsx';
-import Profile from './UserAuth/Profile.jsx';
+import Profile from './UserAuth/profile.jsx';
 
 export default function Routes() {
   return (

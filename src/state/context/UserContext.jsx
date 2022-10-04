@@ -14,7 +14,7 @@ export const UserActionContext = createContext();
 export default function UserProvider({ children }) {
   const [user, setUser] = useState(getUser());
   const [profile, setProfile] = useState(getLocalProfile());
-
+console.log('user', user);
   const loadProfile = async () => {
     const { data, error } = await getProfile();
     if (error) {
