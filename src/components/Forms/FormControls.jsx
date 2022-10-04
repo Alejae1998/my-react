@@ -87,7 +87,9 @@ const verifyValue = (props) => {
 
 export const InputControl = forwardRef((props, ref) => {
   const { label, className, children, ...rest } = props;
-  verifyValue(rest);
+  if (props.type !== 'file') {
+    verifyValue(rest);
+  }
 
   return (
     <FormControl label={label} className={className}>

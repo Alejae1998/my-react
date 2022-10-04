@@ -10,10 +10,12 @@ export default function Profile() {
   const [profile, handleChange] = useForm();
   const [preview, setPreview] = useState();
   const [updating, setUpdating] = useState(false);
+  const [avatarFile, setAvatarFile] = useState(null);
 
   const handlePreview = (e) => {
     const target = e.target;
     const [file] = target.files;
+    setAvatarFile(file);
     setPreview(URL.createObjectURL(file));
     handleChange({
       target: {
@@ -26,7 +28,8 @@ export default function Profile() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setUpdating(true);
-    await updateProfile(profile);
+    console.log('updating', updating);
+    await updateProfile({ avatar: avatarFile, profile });
     setUpdating(false);
   };
 
